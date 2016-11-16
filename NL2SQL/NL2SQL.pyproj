@@ -28,6 +28,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DBTasks.py" />
+    <Compile Include="NL2SQL\DBTasks.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="NL2SQL\__init__.py" />
     <Compile Include="NL2SQL\views.py" />
@@ -37,10 +41,16 @@
     <Folder Include="NL2SQL\static\" />
     <Folder Include="NL2SQL\static\content\" />
     <Folder Include="NL2SQL\static\fonts\" />
+    <Folder Include="NL2SQL\static\js\" />
     <Folder Include="NL2SQL\static\scripts\" />
     <Folder Include="NL2SQL\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DBConfig.txt" />
+    <Content Include="NL2SQL\static\content\NL2SQL.css" />
+    <Content Include="NL2SQL\static\js\angular.min.js" />
+    <Content Include="NL2SQL\static\js\NL2SQL.js" />
+    <Content Include="NL2SQL\templates\home.html" />
     <Content Include="requirements.txt" />
     <Content Include="NL2SQL\static\content\bootstrap.css" />
     <Content Include="NL2SQL\static\content\bootstrap.min.css" />
